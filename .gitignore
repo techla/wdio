@@ -2,3 +2,5 @@
 node_modules
 _results_
 local.log
+.env
+e2e/features

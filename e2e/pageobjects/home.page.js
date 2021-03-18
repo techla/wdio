@@ -13,7 +13,14 @@ class HomePage extends Page {
     return $('[data-testid="member-nav-quickLogin"]');
   }
 
+  get btnAcceptCookies() {
+    return $("#didomi-notice-agree-button");
+  }
   // features
+  acceptCookies() {
+    this.btnAcceptCookies.click();
+  }
+
   signIn(type) {
     this.btnMenuSignIn.click();
     switch (type) {

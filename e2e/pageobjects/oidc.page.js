@@ -31,8 +31,8 @@ class OIDCPage extends Page {
   login(type) {
     switch (type) {
       case "full":
-        const { gmId, password } = this.credentials;
-        this.inputGmId.setValue(gmId);
+        const { gmId, email, password } = this.credentials;
+        this.inputGmId.setValue(gmId || email);
         this.inputPassword.setValue(password);
         this.inputFullSubmit.click();
         break;
